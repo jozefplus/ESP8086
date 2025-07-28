@@ -1,0 +1,36 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+8086 Emulator for ESP32
+=====================
+RAM: 24 KB
+CPU: ~240 MHz
+=====================
+
+Guru Meditation Error: Core  1 panic'ed (LoadStoreError). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086203  PS      : 0x00060430  A0      : 0x800ed193  A1      : 0x3ffb2170
+A2      : 0x400b04d8  A3      : 0x3ffb33b0  A4      : 0x00000df1  A5      : 0x400b12c8
+A6      : 0x00000001  A7      : 0x00000100  A8      : 0x00000000  A9      : 0x3ffb2140
+A10     : 0x00000df1  A11     : 0x3ffb6954  A12     : 0x3ffb25c0  A13     : 0x00001000
+A14     : 0x00ff0000  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000003
+EXCVADDR: 0x400b12c8  LBEG    : 0x400861b0  LEND    : 0x400861c6  LCOUNT  : 0x00000000
+
+
+Backtrace: 0x40086200:0x3ffb2170 0x400ed190:0x3ffb2180 0x400ed1d5:0x3ffb21c0 0x400ec097:0x3ffb21e0 0x400d2ec7:0x3ffb2200 0x400d2bb6:0x3ffb2220 0x400d2c8e:0x3ffb2270 0x400d58c6:0x3ffb2290
+
+
+
+
+ELF file SHA256: a3050d67bb3ede9b
+
+Rebooting...
